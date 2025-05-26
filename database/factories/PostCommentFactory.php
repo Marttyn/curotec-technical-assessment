@@ -18,7 +18,7 @@ class PostCommentFactory extends Factory
             'created_at' => $this->faker->dateTimeThisYear(),
             'updated_at' => Carbon::now(),
 
-            'post_id' => Post::factory(),
+            'post_id' => $this->faker->randomElement(Post::pluck('id')),
         ];
     }
 }
