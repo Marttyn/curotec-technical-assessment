@@ -2,10 +2,12 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Posts extends Model
+class Post extends Model
 {
     use HasFactory;
 
@@ -14,4 +16,9 @@ class Posts extends Model
         'content',
         'author',
     ];
+
+    public function comments(): Builder|HasMany|Post
+    {
+        return $this->hasMany(PostComment::class);
+    }
 }

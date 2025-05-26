@@ -39,5 +39,6 @@
                 </div>
             </article>
         </main>
+        <livewire:posts.comment :post="$post" />
     </div>
 </x-layout>

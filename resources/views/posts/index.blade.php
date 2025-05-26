@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 bg-gray-200 dark:bg-gray-900">
+    <div class="mx-auto px-4 py-6 sm:px-6 lg:px-8 bg-gray-200 dark:bg-gray-900">
         <div class="bg-white dark:bg-gray-800 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-gray-700/20">
             <div class="px-6 py-4 flex flex-col">
                 <div class="flex items-center justify-between">

@@ -2,13 +2,13 @@
 
 namespace Database\Factories;
 
-use App\Models\Posts;
+use App\Models\Post;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Carbon;
 
-class PostsFactory extends Factory
+class PostFactory extends Factory
 {
-    protected $model = Posts::class;
+    protected $model = Post::class;
 
     public function definition(): array
     {
